@@ -40,7 +40,7 @@ zwi±zanych z przesy³em plików przy u¿yciu zapytañ multipart/form-data.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
