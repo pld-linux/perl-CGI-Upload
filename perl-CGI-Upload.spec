@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	CGI
 %define	pnam	Upload
@@ -12,12 +16,11 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	30ae6bb548d9806b74ff3e2fde8fcdfc
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
-# no tests yet
-# %if %{?_without_tests:0}%{!?_without_tests:1}
-# BuildRequires:	perl-CGI
-# BuildRequires:	perl-File-MMagic
-# BuildRequires:	perl-HTTP-BrowserDetect
-# %endif
+%if %{with tests}
+#BuildRequires:	perl-CGI
+BuildRequires:	perl-File-MMagic
+BuildRequires:	perl-HTTP-BrowserDetect
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -42,6 +45,8 @@ zwi±zanych z przesy³em plików przy u¿yciu zapytañ multipart/form-data.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
