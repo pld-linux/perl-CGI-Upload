@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	CGI
-%define	pnam	Upload
+%define		pdir	CGI
+%define		pnam	Upload
 Summary:	CGI::Upload - CGI class for handling browser file uploads
 Summary(pl):	CGI::Upload - klasa CGI do obs³ugi przesy³u plików przez przegl±darkê
 Name:		perl-CGI-Upload
