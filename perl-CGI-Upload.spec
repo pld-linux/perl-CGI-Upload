@@ -38,7 +38,7 @@ zwi±zanych z przesy³em plików przy u¿yciu zapytañ multipart/form-data.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
