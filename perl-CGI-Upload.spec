@@ -35,7 +35,7 @@ information regarding files uploaded through multipart/form-data requests.
 
 %description -l pl
 CGI::Upload udostêpnia prosty i bezpieczny sposób do obs³ugi plików,
-presy³anych przez przegl±darkê w zapytaniach multipart/form-data.
+przesy³anych przez przegl±darkê w zapytaniach multipart/form-data.
 Podstawow± przewag± tego modu³u nad innymi istniej±cymi modu³ami jest
 pojedyñczy interfejs, dostarczaj±cy najczê¶ciej wymaganych informacji,
 zwi±zanych z przesy³em plików przy u¿yciu zapytañ multipart/form-data.
