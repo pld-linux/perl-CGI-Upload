@@ -6,7 +6,7 @@
 %define		pdir	CGI
 %define		pnam	Upload
 Summary:	CGI::Upload - CGI class for handling browser file uploads
-Summary(pl):	CGI::Upload - klasa CGI do obs³ugi przesy³u plików przez przegl±darkê
+Summary(pl.UTF-8):   CGI::Upload - klasa CGI do obsÅ‚ugi przesyÅ‚u plikÃ³w przez przeglÄ…darkÄ™
 Name:		perl-CGI-Upload
 Version:	1.10
 Release:	1
@@ -33,12 +33,12 @@ a web browser.  The primary advantage which this module offers over
 existing modules is the single interface providing the most often required
 information regarding files uploaded through multipart/form-data requests.
 
-%description -l pl
-CGI::Upload udostêpnia prosty i bezpieczny sposób do obs³ugi plików,
-przesy³anych przez przegl±darkê w zapytaniach multipart/form-data.
-Podstawow± przewag± tego modu³u nad innymi istniej±cymi modu³ami jest
-pojedyñczy interfejs, dostarczaj±cy najczê¶ciej wymaganych informacji,
-zwi±zanych z przesy³em plików przy u¿yciu zapytañ multipart/form-data.
+%description -l pl.UTF-8
+CGI::Upload udostÄ™pnia prosty i bezpieczny sposÃ³b do obsÅ‚ugi plikÃ³w,
+przesyÅ‚anych przez przeglÄ…darkÄ™ w zapytaniach multipart/form-data.
+PodstawowÄ… przewagÄ… tego moduÅ‚u nad innymi istniejÄ…cymi moduÅ‚ami jest
+pojedyÅ„czy interfejs, dostarczajÄ…cy najczÄ™Å›ciej wymaganych informacji,
+zwiÄ…zanych z przesyÅ‚em plikÃ³w przy uÅ¼yciu zapytaÅ„ multipart/form-data.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
