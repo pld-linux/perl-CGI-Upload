@@ -8,13 +8,13 @@
 Summary:	CGI::Upload - CGI class for handling browser file uploads
 Summary(pl.UTF-8):	CGI::Upload - klasa CGI do obsługi przesyłu plików przez przeglądarkę
 Name:		perl-CGI-Upload
-Version:	1.10
-Release:	2
+Version:	1.11
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	81d8c8291e3054b8a4859749ffcfc7e9
+# Source0-md5:	2f599b179c49e3d843351b77d94e5777
 URL:		http://search.cpan.org/dist/CGI-Upload/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
